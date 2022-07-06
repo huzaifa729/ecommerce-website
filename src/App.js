@@ -2,14 +2,25 @@
  import './App.css';
  import {  BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Header from './Header';
+import Login from './Login';
 
  function App() {
+    const user = "huz";
      return (
       <BrowserRouter>
      <div className="App">
-        <Routes>
+
+     {!user ? (
+        <Login/>
+     ):(
+        <>
+     
+     
+           <Routes>
             <Route path="/" element={<Header />}/>
-        </Routes>  
+        </Routes> 
+        </>
+     )}
     </div>
     </BrowserRouter>
    );
