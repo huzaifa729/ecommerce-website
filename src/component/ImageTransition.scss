@@ -1,0 +1,26 @@
+.slideshow-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: inherit;
+  
+    margin-top: 20px;
+  }
+  
+  .slideshow-image {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+   
+
+     div{
+        height: inherit;
+        width: inherit;
+         background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+    object-fit: cover; 
+    opacity: 1.3;
+     }
+  }

@@ -3,8 +3,13 @@
  import {  BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Header from './Header';
 import Login from './Login';
+import Slides from './Slides';
+import CarouselController from './component/CarouselController';
 
- function App() {
+
+
+  function App() {
+   
     const user = "huz";
      return (
       <BrowserRouter>
@@ -18,7 +23,10 @@ import Login from './Login';
      
            <Routes>
             <Route path="/" element={<Header />}/>
-        </Routes> 
+      </Routes>
+      <CarouselController/> 
+    
+               
         </>
      )}
     </div>
@@ -27,6 +35,14 @@ import Login from './Login';
  }
 
  export default App;
+
+
+
+
+
+
+
+
 
 
 
