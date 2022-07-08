@@ -5,6 +5,7 @@ import Header from './Header';
 import Login from './Login';
 import Slides from './Slides';
 import CarouselController from './component/CarouselController';
+import AllProduct from './AllProduct';
 
 
 
@@ -25,7 +26,7 @@ import CarouselController from './component/CarouselController';
             <Route path="/" element={<Header />}/>
       </Routes>
       <CarouselController/> 
-    
+      <AllProduct/>
                
         </>
      )}

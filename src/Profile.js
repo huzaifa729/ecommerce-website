@@ -12,6 +12,8 @@ import PersonAdd from '@mui/icons-material/PersonAdd';
 import Settings from '@mui/icons-material/Settings';
 import Logout from '@mui/icons-material/Logout';
 import { blue } from '@mui/material/colors';
+import CircleNotificationsIcon from '@mui/icons-material/CircleNotifications';
+import BookmarkAddOutlinedIcon from '@mui/icons-material/BookmarkAddOutlined';
 
  function Profile() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -55,7 +57,7 @@ import { blue } from '@mui/material/colors';
             '& .MuiAvatar-root': {
               width: 32,
               height: 32,
-              ml: -0.6,
+              ml: -0.3,
               mr: 2,
             },
             '&:before': {
@@ -69,6 +71,7 @@ import { blue } from '@mui/material/colors';
               bgcolor: 'background.paper',
               transform: 'translateY(-50%) rotate(45deg)',
               zIndex: 0,
+              
             },
           },
         }}
@@ -76,27 +79,40 @@ import { blue } from '@mui/material/colors';
         anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
       >
         <MenuItem>
-          <Avatar /> Profile
+          <Avatar  sx={{ bgcolor: blue[200], color: blue[800] }}/> Profile
         </MenuItem>
         <MenuItem>
-          <Avatar /> My account
+          <Avatar  sx={{ bgcolor: blue[200], color: blue[800] }}/> My account
         </MenuItem>
+       
         <Divider />
         <MenuItem>
+        <ListItemIcon>
+         <CircleNotificationsIcon fontSize='medium' sx={{  color: blue[800] }}/> 
+         </ListItemIcon>
+            Notification Perferences
+        </MenuItem>
+        <MenuItem>
+        <ListItemIcon>
+         <BookmarkAddOutlinedIcon fontSize='medium' sx={{  color: blue[800] }}/> 
+         </ListItemIcon>
+            WatchList
+        </MenuItem>
+        <MenuItem>
           <ListItemIcon>
-            <PersonAdd fontSize="medium" />
+            <PersonAdd fontSize="medium"  sx={{  color: blue[800] }}/>
           </ListItemIcon>
           Add another account 
         </MenuItem>
         <MenuItem>
           <ListItemIcon>
-            <Settings fontSize="medium" />
+            <Settings fontSize="medium" sx={{  color: blue[800] }}/>
           </ListItemIcon>
           Settings
         </MenuItem>
         <MenuItem>
           <ListItemIcon>
-            <Logout fontSize="medium" />
+            <Logout fontSize="medium" sx={{  color: blue[800] }} />
           </ListItemIcon>
           Logout
         </MenuItem>
