@@ -6,12 +6,13 @@ import Login from './Login';
 import Slides from './Slides';
 import CarouselController from './component/CarouselController';
 import AllProduct from './AllProduct';
+import Doc from './Doc';
 
 
 
   function App() {
    
-    const user = "huz";
+    const user = null;
      return (
       <BrowserRouter>
      <div className="App">
@@ -27,6 +28,7 @@ import AllProduct from './AllProduct';
       </Routes>
       <CarouselController/> 
       <AllProduct/>
+      <Doc/>
                
         </>
      )}
