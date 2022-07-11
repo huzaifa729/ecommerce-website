@@ -18,7 +18,7 @@ class CarouselController extends Component {
     "https://rukminim1.flixcart.com/flap/3376/560/image/7c8a50faa593dc24.jpg?q=50",
     "https://www.tatadigital.com/content/dam/tcp/channels/assets/homepage/stories/new_hp_version/desktop/29062022midnight/MicrosoftTeams-desktop.png",
   ];
-  duration = 4000;
+  duration = 3000;
   constructor(props) {
     super(props);
     this.state = { index: 0 };
