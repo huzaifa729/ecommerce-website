@@ -7,12 +7,12 @@ import Slides from './Slides';
 import CarouselController from './component/CarouselController';
 import AllProduct from './AllProduct';
 import Doc from './Doc';
-
+import Brands from './Brands';
 
 
   function App() {
    
-    const user = null;
+    const user = "ui";
      return (
       <BrowserRouter>
      <div className="App">
@@ -29,7 +29,7 @@ import Doc from './Doc';
       <CarouselController/> 
       <AllProduct/>
       <Doc/>
-               
+       <Brands/>         
         </>
      )}
     </div>

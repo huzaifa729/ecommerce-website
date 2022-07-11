@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 
+
 function Login() {
   return (
      
@@ -56,7 +57,9 @@ function Login() {
 
                  </Github>
 
-
+               <Create>
+                  <Account>New to D-Shop? Create an account</Account>
+               </Create>
                 
              </LoginBtns>
 
@@ -81,7 +84,7 @@ const HeaderLogo = styled.div`
     display:flex;
     flex-direction:column;
   margin-left:55px;
-    margin-top:20px; 
+    margin-top:10px; 
 
     img{
        margin-left:30px;
@@ -135,7 +138,7 @@ const LoginPage = styled.div`
    padding: 00px 6px;
 
     width: 25%;
-    height: 330px;
+    height: 340px;
     font-size: 16px;
     border-radius: 3px;
     margin:auto;
@@ -210,6 +213,8 @@ const Google = styled.button`
     margin-left:6px;
     margin-top:0px;
    }
+
+  
 `
 
 const Facebook = styled.button`
@@ -266,6 +271,8 @@ const GP = styled.div`
  margin-left:7px;
  color:whitesmoke;
  margin-top:2px;
+
+
 `
 
 const FP = styled.div`
@@ -299,6 +306,16 @@ const Foot = styled.div`
    text-align:center;
    justify-content:center;
    margin-top:12px;
+  margin-left:5px;
+`
+
+
+const Create = styled.div`
+   margin-top:12px;
+`
+const Account = styled.div`
+  font-size:18px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 `
 
 
