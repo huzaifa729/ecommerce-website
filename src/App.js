@@ -10,6 +10,7 @@ import Doc from './Doc';
 import Brands from './Brands';
 
 
+
   function App() {
    
     const user = "ui";
@@ -29,7 +30,9 @@ import Brands from './Brands';
       <CarouselController/> 
       <AllProduct/>
       <Doc/>
-       <Brands/>         
+       <Brands/>   
+
+       <Slides/>
         </>
      )}
     </div>

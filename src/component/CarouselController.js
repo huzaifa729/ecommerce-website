@@ -11,10 +11,10 @@ import './CarouselController.scss';
 class CarouselController extends Component {
   sliderInterval = null; // interval that will dispatch a call to go to the next slide for every interval
   images = [
+    "https://cdn.fcglcdn.com/brainbees/banners/test/HP_MKTG_P04__Super-Exciting-Dearl_MOAS_Desktop_202271005949.webp",
     "https://image.made-in-china.com/152f0j10ttEaQQfyNTlb/banner1024X300-1654568039000.jpg",
     "https://image.made-in-china.com/152f0j10TfGYjVRhmRlc/banner1024X300-1656655458000.jpg",
     "https://www.tatadigital.com/content/dam/tcp/channels/assets/homepage/stories/new_hp_version/desktop/30062022midnight/HP_HERO_AEM_CROMA_Payday-2_TEMP.jpg",
-    "https://www.tatadigital.com/content/dam/tcp/channels/assets/homepage/stories/05072022/HP_HERO_AEM_MONSOON_OFFER_05_07_D.jpg",
     "https://rukminim1.flixcart.com/flap/3376/560/image/7c8a50faa593dc24.jpg?q=50",
     "https://www.tatadigital.com/content/dam/tcp/channels/assets/homepage/stories/new_hp_version/desktop/29062022midnight/MicrosoftTeams-desktop.png",
   ];

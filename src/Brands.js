@@ -63,6 +63,32 @@ function Brands() {
 
               </Flex>
            </BradHim>
+
+
+
+           <Catch>
+                 <Little>PREMIUM BOUTIQUES</Little>
+
+                 <Cover>
+                     <Img2>
+                    <img src='https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/27136.webp' alt='anu'/>
+
+                    <img src='https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/27137.webp' alt='anu'/>
+
+                    <img src='https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/27107.webp' alt='anu'/>
+                    </Img2>
+                 </Cover>
+
+                 <Cover>
+                     <Img2>
+                    <img src='https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/27109.webp' alt='anu'/>
+
+                    <img src='https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/27111.webp' alt='anu'/>
+
+                    <img src='https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/27140.webp' alt='anu'/>
+                    </Img2>
+                 </Cover>
+           </Catch>
            
 
       </Container>
@@ -74,7 +100,7 @@ export default Brands;
 const Container = styled.div`
   margin-top:35px;
   margin-left:35px;
-  height:600px;
+
 `
 
 const Brand = styled.div`
@@ -137,6 +163,39 @@ const IMG = styled.div`
         margin:3px 27px;
         object-fit: contain;
      }
+`
+
+
+const Catch = styled.div`
+       margin-top:45px;  
+`
+
+const Little = styled.div`
+  color: white;
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  justify-content: center;
+  text-decoration: underline;
+`
+
+const Cover = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 10px;
+`
+
+const Img2 = styled.div`
+   margin-top: 10px;
+   margin-left: 26px;
+     
+   img{
+    width:360px;
+     object-fit:contain;
+     margin-left: 25px;
+   }
+
 `
 
 
