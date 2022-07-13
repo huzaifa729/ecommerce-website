@@ -8,7 +8,7 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { useState } from 'react';
 import { useEffect } from 'react';
-let slidesToShow = 5;
+let slidesToShow = 4;
 const PreviousBtn = (props) => {
   console.log(props);
   const { className, onClick, currentSlide } = props;
@@ -16,7 +16,7 @@ const PreviousBtn = (props) => {
     <>
       {currentSlide !== 0 && (
         <div className={className} onClick={onClick}>
-          <ArrowBackIosIcon style={{ color: 'blue', fontSize: '30px' }} />
+          <ArrowBackIosIcon style={{ color: 'white', fontSize: '50px' }} />
         </div>
       )}
     </>
@@ -29,7 +29,7 @@ const NextBtn = (props) => {
     <>
       {currentSlide !== slideCount - slidesToShow && (
         <div className={className} onClick={onClick}>
-          <ArrowForwardIosIcon style={{ color: 'blue', fontSize: '30px' }} />
+          <ArrowForwardIosIcon style={{ color: 'white', fontSize: '50px' }} />
         </div>
       )}
     </>
@@ -40,7 +40,7 @@ const carouselProperties = {
   prevArrow: <PreviousBtn />,
   nextArrow: <NextBtn />,
   slidesToShow: slidesToShow,
-  slidesToScroll: 2,
+  slidesToScroll: 1,
   infinite: false,
   // slidesToScroll={3}
   responsive: [
@@ -54,14 +54,14 @@ const carouselProperties = {
     {
       breakpoint: 769,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 1,
         centerMode: false,
       },
     },
     {
       breakpoint: 1025,
       settings: {
-        slidesToShow: 4,
+        slidesToShow: 2,
         centerMode: false,
         slidesToScroll: 2,
       },
@@ -91,8 +91,8 @@ const MultiItemCarousel = () => {
   }
 
   return (
-    <div style={{ margin: '30px' }} className='carousel'>
-      <h1>Basic carousel</h1>
+
+    <div style={{ margin: '20px' }} className='carousel'>
       <Slider {...carouselProperties}>
         {multiData.map((item) => (
           <Card item={item} />
@@ -109,20 +109,27 @@ const Card = ({ item }) => {
         className='multi__image'
         src={item}
         alt=''
-        style={{
-          width: '100%',
-          height: '170px',
+         style={{
+            width: '100%',
+         height: '200px',
           objectFit: 'contain',
           marginBottom: '10px',
-        }}
+          
+         }}
       />
-      <p style={{ fontSize: '14px', padding: '5px 0' }}>TOP TRNDING TVs</p>
-      <p style={{ fontSize: '16px', padding: '5px 0', color: 'green' }}>
+      {/* <p style={{ fontSize: '20px', padding: '1px 0',color: 'white',}}>TOP TRNDING TVs</p>
+      <p style={{ fontSize: '16px', padding: '2px 0', color: 'white' }}>
         From ₹ 7,000
       </p>
-      <p style={{ fontSize: '14px', padding: '5px 0', color: 'gray' }}>
+      <p style={{ fontSize: '17px', padding: '2px 0', color: 'white' }}>
         Up To ₹ 5,000 Off on HDFC
-      </p>
+      </p> */}
+
+      <div className="style">
+           <div className="one">Top Trading to wear</div>
+           <div className="two"> From ₹ 7,000</div>
+           <div className="three">Up To ₹ 5,000 Off on HDFC</div>
+      </div>
     </div>
   );
 };

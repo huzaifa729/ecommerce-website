@@ -31,15 +31,15 @@ import Hello from './Hello';
            <Routes>
             <Route path="/" element={<Header />}/>
       </Routes>
-       <CarouselController/>  
-      
+    <CarouselController/>   
+       {/* <Hello/> */}
       <AllProduct/>
       <Doc/>
        <Brands/>   
     <Slides/>
 <MultiItemCarousel/>
 <MultiItemCarousel/>
-<Hello/>
+
         </>
      )}
     </div>

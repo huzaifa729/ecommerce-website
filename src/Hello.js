@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
-
 import ImageGallery from 'react-image-gallery';
-
-
-
 import 'react-image-gallery/styles/css/image-gallery.css';
  import './Hello.css';
 
 const PREFIX_URL =
-  'https://raw.githubusercontent.com/xiaolin/react-image-gallery/master/static/';
+   'https://raw.githubusercontent.com/xiaolin/react-image-gallery/master/static/';
+  
 class Hello extends Component {
   constructor() {
     super();

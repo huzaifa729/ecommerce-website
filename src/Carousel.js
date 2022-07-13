@@ -11,7 +11,7 @@ const PreviousBtn = (props) => {
   const { className, onClick } = props;
   return (
     <div className={className} onClick={onClick}>
-      <ArrowBackIosIcon style={{ color: "blue", fontSize: "30px" }} />
+      <ArrowBackIosIcon style={{ color: "black", fontSize: "50px" }} />
     </div>
   );
 };
@@ -19,7 +19,7 @@ const NextBtn = (props) => {
   const { className, onClick } = props;
   return (
     <div className={className} onClick={onClick}>
-      <ArrowForwardIosIcon style={{ color: "blue", fontSize: "30px" }} />
+      <ArrowForwardIosIcon style={{ color: "black", fontSize: "50px" }} />
     </div>
   );
 };
