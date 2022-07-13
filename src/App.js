@@ -8,6 +8,10 @@ import CarouselController from './component/CarouselController';
 import AllProduct from './AllProduct';
 import Doc from './Doc';
 import Brands from './Brands';
+import MultiItemCarousel from './MultiitemCarousel';
+import Hello from './Hello';
+
+
 
 
 
@@ -27,12 +31,15 @@ import Brands from './Brands';
            <Routes>
             <Route path="/" element={<Header />}/>
       </Routes>
-      <CarouselController/> 
+       <CarouselController/>  
+      
       <AllProduct/>
       <Doc/>
        <Brands/>   
-
-       <Slides/>
+    <Slides/>
+<MultiItemCarousel/>
+<MultiItemCarousel/>
+<Hello/>
         </>
      )}
     </div>
