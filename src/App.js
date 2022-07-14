@@ -11,6 +11,8 @@ import Brands from './Brands';
 import MultiItemCarousel from './MultiitemCarousel';
 import Hello from './Hello';
 import Infinity from './Infinity';
+import DApp from './DApp';
+import Footer from './Footer';
 
 
 
@@ -41,6 +43,8 @@ import Infinity from './Infinity';
 <MultiItemCarousel/>
 <MultiItemCarousel/>
 <Infinity/>
+<DApp/>
+<Footer/>
         </>
      )}
     </div>
