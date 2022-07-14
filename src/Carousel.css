@@ -90,3 +90,18 @@
   margin-top: 5px;
   margin-bottom: 7px;
 }
+
+
+.pin{
+  color: white;
+  /* margin-top: -40px; */
+  font-size: 30px;
+  margin-bottom: -40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 45px;
+  margin-top: 24px;
+}
+
+.r{
+  margin-top: 35px;
+}

@@ -91,7 +91,8 @@ const MultiItemCarousel = () => {
   }
 
   return (
-
+   <div className='r'>
+    <div className='pin'>Trending Products</div>
     <div style={{ margin: '20px' }} className='carousel'>
       <Slider {...carouselProperties}>
         {multiData.map((item) => (
@@ -99,11 +100,13 @@ const MultiItemCarousel = () => {
         ))}
       </Slider>
     </div>
+    </div>
   );
 };
 
 const Card = ({ item }) => {
   return (
+ 
     <div style={{ textAlign: 'center' }}>
       <img
         className='multi__image'
@@ -127,10 +130,11 @@ const Card = ({ item }) => {
 
       <div className="style">
            <div className="one">Top Trading to wear</div>
-           <div className="two"> From ₹ 7,000</div>
+           <div className="two"> From ₹7,000</div>
            <div className="three">Up To ₹ 5,000 Off on HDFC</div>
       </div>
     </div>
+  
   );
 };
 

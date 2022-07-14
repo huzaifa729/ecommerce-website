@@ -10,6 +10,7 @@ import Doc from './Doc';
 import Brands from './Brands';
 import MultiItemCarousel from './MultiitemCarousel';
 import Hello from './Hello';
+import Infinity from './Infinity';
 
 
 
@@ -39,7 +40,7 @@ import Hello from './Hello';
     <Slides/>
 <MultiItemCarousel/>
 <MultiItemCarousel/>
-
+<Infinity/>
         </>
      )}
     </div>
