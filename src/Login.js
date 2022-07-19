@@ -91,7 +91,8 @@ export default Login;
 const Container = styled.div`
       /* background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210224/pngtree-blue-abstract-background-business-image_564246.jpg");  */
     /* background-image: url("https://wallpaper.dog/large/10824481.jpg"); */
-    background-image: url("https://t3.ftcdn.net/jpg/01/91/78/32/360_F_191783282_0TVrx5VrvrkpDHSKdjjI87HkbXJy5TMw.jpg");
+    /* background-image: url("https://t3.ftcdn.net/jpg/01/91/78/32/360_F_191783282_0TVrx5VrvrkpDHSKdjjI87HkbXJy5TMw.jpg"); */
+    background-image: url("https://img.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28312.jpg");
      color:black;
      height: 656px;
      background-position: center;
@@ -199,7 +200,7 @@ const SignWith = styled.div`
 display: inline-block;
     height: 3px;
     width: 27%;
-     background-color: #2a405b; 
+    background-color: whitesmoke;
     position: relative;
    vertical-align: middle;
     left: -15px;
@@ -210,10 +211,11 @@ display: inline-block;
      display: inline-block; 
     height: 3px;
     width: 27%;
-    background-color: #2a405b;
+    /* background-color: #2a405b; */
     vertical-align: middle;
     position: relative;
     left: 15px;
+    background-color: whitesmoke;
    }
 `
 
@@ -235,6 +237,7 @@ const Google = styled.button`
  display:flex;
  align-items:center;
  background: none;
+ border: 3px solid whitesmoke;
  /* background-color: #2874f0; */
   /* background: rgb(123,136,136);
 background: linear-gradient(0deg, rgba(123,136,136,1) 0%, rgba(0,0,0,1) 100%);  */
@@ -261,6 +264,7 @@ margin-top:10px;
 display:flex;
  align-items:center;
 cursor: pointer;
+border: 3px solid whitesmoke;
    img{
     height:35px;
     margin-left:2px;
@@ -279,6 +283,7 @@ margin-top:10px;
 display:flex;
  align-items:center;
 cursor: pointer;
+border: 3px solid whitesmoke;
    img{
     height:35px;
     background:none;
@@ -287,6 +292,7 @@ cursor: pointer;
 `
 
 const Github = styled.button`
+ border: 3px solid whitesmoke;
  /* background-color: #2a405b; */
  /* background: rgb(123,136,136);
 background: linear-gradient(0deg, rgba(123,136,136,1) 0%, rgba(0,0,0,1) 100%); */
@@ -299,7 +305,7 @@ display:flex;
  align-items:center;
 cursor: pointer;
    img{
-    height:35px;
+    height:28px;
     background:none;
     margin-left:6px;
    }
@@ -308,28 +314,30 @@ cursor: pointer;
 
 const GP = styled.div`
  font-size:21px;
- font-family: Verdana, Geneva, Tahoma, sans-serif;
+ /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
  margin-left:7px;
  color:whitesmoke; 
  margin-top:2px;
 font-weight: 525;
-
+font-style: italic;
 `
 
 const FP = styled.div`
  font-size:20px;
- font-family: Verdana, Geneva, Tahoma, sans-serif;
+ /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
  margin-left:7px;
  color:whitesmoke;
  margin-top:2px;
+ font-style: italic;
 `
 
 const TP = styled.div`
  font-size:20px;
- font-family: Verdana, Geneva, Tahoma, sans-serif;
+ /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
  margin-left:7px;
  color:whitesmoke;
  margin-top:2px;
+ font-style: italic;
 `
 
 
