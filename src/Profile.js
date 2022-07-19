@@ -1,4 +1,4 @@
-import React from 'react'
+import React  from "react";
 import Box from '@mui/material/Box';
 import Avatar from '@mui/material/Avatar';
 import Menu from '@mui/material/Menu';
@@ -14,8 +14,19 @@ import Logout from '@mui/icons-material/Logout';
 import { blue } from '@mui/material/colors';
 import CircleNotificationsIcon from '@mui/icons-material/CircleNotifications';
 import BookmarkAddOutlinedIcon from '@mui/icons-material/BookmarkAddOutlined';
+import { useSelector } from "react-redux";
+import { selectUser } from "./features/userSlice";
+ import { auth } from "./firebase";
+
 
  function Profile() {
+  const user = useSelector(selectUser);
+  const handleLogout = () => {
+    if  (window.confirm("Wanna break up with us :(")) {
+      auth.signOut();
+    }
+  };
+
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -38,7 +49,7 @@ import BookmarkAddOutlinedIcon from '@mui/icons-material/BookmarkAddOutlined';
             aria-haspopup="true"
             aria-expanded={open ? 'true' : undefined}
           >
-            <Avatar  sx={{ bgcolor: blue[100], color: blue[600] }}/>
+            <Avatar   sx={{ bgcolor: blue[100], color: blue[600] }}/>
           </IconButton>
         </Tooltip>
       </Box>
@@ -79,7 +90,8 @@ import BookmarkAddOutlinedIcon from '@mui/icons-material/BookmarkAddOutlined';
         anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
       >
         <MenuItem>
-          <Avatar  sx={{ bgcolor: blue[200], color: blue[800] }}/> Profile
+          <Avatar  sx={{ bgcolor: blue[200], color: blue[800] }}/>  
+          <p>Name:-</p> <span>{String(user.name).split("@")[0]}</span>
         </MenuItem>
         <MenuItem>
           <Avatar  sx={{ bgcolor: blue[200], color: blue[800] }}/> My account
@@ -110,9 +122,9 @@ import BookmarkAddOutlinedIcon from '@mui/icons-material/BookmarkAddOutlined';
           </ListItemIcon>
           Settings
         </MenuItem>
-        <MenuItem>
-          <ListItemIcon>
-            <Logout fontSize="medium" sx={{  color: blue[800] }} />
+        <MenuItem  onClick={handleLogout}>
+          <ListItemIcon  >
+            <Logout  fontSize="medium" sx={{  color: blue[800] }} />
           </ListItemIcon>
           Logout
         </MenuItem>

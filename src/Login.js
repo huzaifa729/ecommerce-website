@@ -1,8 +1,21 @@
+
 import React from 'react'
 import styled from 'styled-components';
+import { auth, facebookProvider, googleProvider } from "./firebase";
+import { selectUser } from "./features/userSlice";
 
 
 function Login() {
+
+
+  const handleGoogle = () => {
+    auth.signInWithPopup(googleProvider);
+  };
+
+  const handleFacebook = () => {
+    auth.signInWithPopup(facebookProvider);
+  };
+
   return (
      
     <Container>
@@ -26,13 +39,13 @@ function Login() {
              <SignWith>Sign up with</SignWith>
 
              <LoginBtns>
-                 <Google>
+                 <Google onClick={handleGoogle}>
 
                  <img className="goggle-logo" src="//assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/google-icon.5c764c55.svg" alt="Google Logo"/>
                     <GP>Google</GP>
                  </Google>
 
-                 <Facebook>
+                 <Facebook onClick={handleFacebook}>
 
                  <img className="facebook-img"
              src="https://img.icons8.com/fluency/2x/facebook-new.png" alt="facebook"/>
@@ -66,8 +79,7 @@ function Login() {
         </LoginPage>
         <Line></Line>
 
-    <Foot>Copyright © 1995-2022 D-shop Inc. All Rights Reserved. Accessibility, User Agreement, Privacy, Cookies, Do not sell my personal information and AdChoice
-Norton Secured - powered by DigiCert.</Foot>
+    <Foot>Copyright © 1995-2022 D-shop Inc. All Rights Reserved. </Foot>
 
     </Container>
   
@@ -77,6 +89,12 @@ Norton Secured - powered by DigiCert.</Foot>
 export default Login;
 
 const Container = styled.div`
+     background-image: url("https://abs.twimg.com/sticky/illustrations/lohp_en_1302x955.png");
+     color:black;
+     height: 100vh;
+     background-position: center;
+     background-size: cover;
+    
 `;
 
 const HeaderLogo = styled.div`
@@ -84,7 +102,7 @@ const HeaderLogo = styled.div`
     display:flex;
     flex-direction:column;
   margin-left:55px;
-    margin-top:10px; 
+    margin-top:1px; 
 
     img{
        margin-left:30px;
@@ -132,11 +150,11 @@ const LoginPara = styled.div`
 
 const LoginPage = styled.div`
          outline: none;
-    color: #fff;
-    border: 1px solid #2a405b;
-    background-color: #1c2a3b;
+    // color: #fff;
+    // border: 1px solid #2a405b;
+    // background-color: #1c2a3b;
    padding: 00px 6px;
-
+   color:black;
     width: 25%;
     height: 340px;
     font-size: 16px;

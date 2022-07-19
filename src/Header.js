@@ -5,6 +5,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import Profile from './Profile';
+// import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -16,7 +17,7 @@ function Header() {
 
         <Headertitles>
            <Navone>Home</Navone>
-           <Navtwo>Offers</Navtwo>
+          <Navtwo>Offers</Navtwo>
            <Navthree>Stories</Navthree>
         </Headertitles>
 

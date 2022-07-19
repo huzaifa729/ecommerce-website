@@ -13,30 +13,61 @@ import Hello from './Hello';
 import Infinity from './Infinity';
 import DApp from './DApp';
 import Footer from './Footer';
+import Offers from './Offers';
+import Home from './Home';
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 
+import { login, logout, selectUser } from "./features/userSlice";
 
-
-
+import {auth}  from './firebase'
 
   function App() {
+   const user = useSelector(selectUser);
+   const dispatch = useDispatch();
+
+   useEffect(() => {
+      auth.onAuthStateChanged((authUser) => {
+        if (authUser) {
+          dispatch(
+            login({
+              id: authUser.uid,
+              name: authUser.displayName ? authUser.displayName : authUser.email,
+              lastsignIn: authUser.metadata.lastSignInTime,
+              verified: String(authUser.emailVerified),
+              pic: authUser.photoURL
+                ? authUser.photoURL
+                : "https://lh3.googleusercontent.com/ogw/ADea4I5bHBJbpIvco4Yh1ARth7_gu4dl_QnpyDAU0NW8=s32-c-mo",
+            })
+          );
+        } else {
+          dispatch(logout());
+        }
+      });
+    }, [dispatch]);
    
-    const user = "ui";
+
      return (
       <BrowserRouter>
+     
      <div className="App">
-
+   
+       {""}
      {!user ? (
         <Login/>
      ):(
         <>
      
      
+  
+     
            <Routes>
             <Route path="/" element={<Header />}/>
+            <Route path="/offers" element={<Offers />} />
       </Routes>
-    <CarouselController/>   
+      <CarouselController/>    
        {/* <Hello/> */}
-      <AllProduct/>
+       <AllProduct/>
       <Doc/>
        <Brands/>   
     <Slides/>
@@ -45,10 +76,14 @@ import Footer from './Footer';
 <Infinity/>
 <DApp/>
 <Footer/>
+
+
         </>
      )}
     </div>
+ 
     </BrowserRouter>
+    
    );
  }
 
