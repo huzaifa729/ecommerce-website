@@ -1,7 +1,7 @@
 
 import React from 'react'
 import styled from 'styled-components';
-import { auth, facebookProvider, googleProvider } from "./firebase";
+import { auth, facebookProvider, githubProvider, googleProvider } from "./firebase";
 import { selectUser } from "./features/userSlice";
 
 
@@ -15,6 +15,10 @@ function Login() {
   const handleFacebook = () => {
     auth.signInWithPopup(facebookProvider);
   };
+
+  const handleGithub = () =>{
+    auth.signInWithPopup(githubProvider);
+  }
 
   return (
      
@@ -54,7 +58,7 @@ function Login() {
                  
                  </Facebook>
 
-                 <Twitter>
+                 <Twitter onClick={handleGoogle}>
 
                  <img className="twitter-logo" src="https://cdn-icons-png.flaticon.com/128/747/747622.png?ga=GA1.2.936411358.1657092341" alt="twitter"/>
                    
@@ -62,7 +66,7 @@ function Login() {
 
                  </Twitter>
 
-                 <Github>
+                 <Github onClick={handleGithub}>
 
                  <img className="github-logo" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github Logo"/>
                 
