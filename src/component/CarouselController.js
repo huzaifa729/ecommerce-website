@@ -3,10 +3,11 @@ import PropTypes from 'prop-types';
 
 import ImageTransition from './ImageTransition';
 import TextTransition from './TextTransition';
-
+// import AllProduct from './AllProduct';
 import {mod} from '../Logic/math-helpers';
 
 import './CarouselController.scss';
+
 
 class CarouselController extends Component {
   sliderInterval = null; // interval that will dispatch a call to go to the next slide for every interval
@@ -58,6 +59,7 @@ class CarouselController extends Component {
 
   render() {
     return (
+   <div>
       <div className="slider-controller-container">
          <ImageTransition slideIndex={this.state.index} images={this.images} />
 
@@ -75,6 +77,18 @@ class CarouselController extends Component {
           ))}
         </div>
       </div>
+{/* <AllProduct/>
+<Doc/>
+<Brands/>
+<Slides/>
+<MultiItemCarousel/>
+<MultiItemCarousel/>
+<Infinity/>
+<DApp/>
+<Footer/> */}
+
+      </div>   
+
     );
   }
 }

@@ -3,21 +3,30 @@ import styled from 'styled-components'
 // import Logo3 from "../src/images/Logo3.png"
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
+// import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import Profile from './Profile';
-// import { Link } from 'react-router-dom';
+ import { Link } from 'react-router-dom';
+//  import CarouselController from './component/CarouselController';
+//  import AllProduct from './AllProduct';
+
 
 function Header() {
   return (
+
       <Container>
+          <Link style={{textDecoration: 'none'}} to="/" >
           <HeaderLogo>
           <Title>D-SHOP</Title>
           <img src="https://cdn.pixabay.com/photo/2012/04/11/17/58/arrow-29170__340.png"/>
-        </HeaderLogo>
+          </HeaderLogo>
+         </Link>
 
         <Headertitles>
-           <Navone>Home</Navone>
-          <Navtwo>Offers</Navtwo>
+           <Navone>
+            Home</Navone>
+         <Navtwo>
+         <Link to="/offers" className='linwk'>
+            Offers</Link></Navtwo>
            <Navthree>Stories</Navthree>
         </Headertitles>
 
@@ -45,15 +54,19 @@ function Header() {
            <HeaderProfile>
             <Profile/>
            </HeaderProfile>
-          
-      </Container>
+           
+</Container>
+
+   
   )
 }
 
 export default Header
 
+
+
 const Container = styled.div`
-     display:flex;
+      display:flex;
      /* background: rgb(2,0,36);
 background: linear-gradient(40deg, rgba(2,0,36,1) 0%, rgba(1,1,10,1) 110%, rgba(0,212,255,1) 100%);
 width: 100%;
@@ -73,6 +86,7 @@ const HeaderLogo = styled.div`
     flex-direction:column;
   margin-left:55px;
     margin-top:20px; 
+    text-decoration: none;
 
     img{
        margin-left:30px;
@@ -80,6 +94,8 @@ const HeaderLogo = styled.div`
       object-fit:contain;
      margin-top:-4px;
     }
+
+
 `
 
  const Title = styled.span`
@@ -88,12 +104,12 @@ const HeaderLogo = styled.div`
      background: rgb(123,136,136);
 background: linear-gradient(0deg, rgba(123,136,136,1) 0%, rgba(0,0,0,1) 100%);
             -webkit-text-fill-color: transparent;
-            /* -webkit-background-clip: text; */
-              -webkit-background-clip: text; 
+             /* -webkit-background-clip: text;  */
+             -webkit-background-clip: text; 
               text-shadow: 2px 2px;
                color: beige; 
            /* color:white; */
-        
+
 `
 
 
@@ -125,6 +141,11 @@ const Navtwo = styled.div`
    :hover{
       color:goldenrod;
       transition: 0.5s ease-in;
+   }
+
+   .linwk{
+      color: white;
+      text-decoration: none;
    }
 `
 const Navthree = styled.div`

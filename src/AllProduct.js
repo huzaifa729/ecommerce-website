@@ -1,6 +1,8 @@
 
 import React from 'react'
+// import Doc from './Doc';
 import styled from 'styled-components'
+// import Brands from './Brands';
 function AllProduct() {
     return (
         <Container>
@@ -66,7 +68,8 @@ function AllProduct() {
 
 
 
-
+            {/* <Doc/> */}
+            {/* <Brands/> */}
         </Container>
     )
 }

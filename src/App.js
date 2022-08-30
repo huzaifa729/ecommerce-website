@@ -14,7 +14,7 @@ import Infinity from './Infinity';
 import DApp from './DApp';
 import Footer from './Footer';
 import Offers from './Offers';
-import Home from './Home';
+import Home from './Home'
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -60,22 +60,22 @@ import {auth}  from './firebase'
      
      
   
-     
+     <Header/>
            <Routes>
-            <Route path="/" element={<Header />}/>
-            <Route path="/offers" element={<Offers />} />
-      </Routes>
-      <CarouselController/>    
+             <Route path="/" element={<Home />}/> 
+             <Route path="/offers" element={<Offers />} />
+            </Routes>
+      {/* <CarouselController/>     */}
        {/* <Hello/> */}
-       <AllProduct/>
-      <Doc/>
-       <Brands/>   
-    <Slides/>
-<MultiItemCarousel/>
-<MultiItemCarousel/>
-<Infinity/>
-<DApp/>
-<Footer/>
+       {/* <AllProduct/> */}
+      {/* <Doc/> */}
+      {/* <Brands/>     */}
+      {/* <Slides/> */}
+      {/* <MultiItemCarousel/>
+      <MultiItemCarousel/> */}
+      {/* <Infinity/>
+      <DApp/>
+      <Footer/> */}
 
 
         </>

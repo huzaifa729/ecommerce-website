@@ -33,16 +33,19 @@ function Doc() {
                     <Parathree>Know More</Parathree>
                 </FirstGift>
             </Flex>
+
       </Container>
+
+
   )
 }
 
 export default Doc;
 
 const Container = styled.div`
-   margin: auto;
-   max-width:950px;
-   padding-top:40px;
+  margin: auto;  
+     max-width:950px;
+   padding-top:40px; 
 `
 
 const Flex = styled.div`
