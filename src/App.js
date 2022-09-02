@@ -21,6 +21,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { login, logout, selectUser } from "./features/userSlice";
 
 import {auth}  from './firebase'
+import Fashion from './Fashion';
 
   function App() {
    const user = useSelector(selectUser);
@@ -64,6 +65,7 @@ import {auth}  from './firebase'
            <Routes>
              <Route path="/" element={<Home />}/> 
              <Route path="/offers" element={<Offers />} />
+             <Route path='/fashion' element={<Fashion/>}/>
             </Routes>
       {/* <CarouselController/>     */}
        {/* <Hello/> */}
