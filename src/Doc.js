@@ -62,6 +62,7 @@ const FirstGift = styled.div`
         width: 105px;
         margin-left:12px;
         padding-bottom:16px;
+        z-index: 1;
     }
 `
 

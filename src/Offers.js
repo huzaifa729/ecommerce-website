@@ -8,7 +8,8 @@ function Offers() {
    <Container>
 
 <Banner>
-  <img src='https://www.tatadigital.com/v2/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fnc2ghyne%2Fproduction%2F58057920ed6dcd1e08e6febc6d857329cfba878d-1000x500.jpg&w=750&q=75'/>
+  {/* <img src='https://www.tatadigital.com/v2/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fnc2ghyne%2Fproduction%2F58057920ed6dcd1e08e6febc6d857329cfba878d-1000x500.jpg&w=750&q=75'/> */}
+  <img src="https://www.tatadigital.com/v2/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fnc2ghyne%2Fproduction%2F52240c1048b9fd5f2daa6bf78d17c7e7d0bce0b9-1000x500.jpg&w=750&q=75" alt="img"/>
 </Banner>
 
 <AllCaptured>

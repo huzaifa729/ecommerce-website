@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import { Link } from 'react-router-dom';
+import SearchIcon from '@mui/icons-material/Search';
+
 
 function Fashion() {
   return (
@@ -13,9 +15,12 @@ function Fashion() {
         <Spans>Fashions</Spans>
         </Fasn>
 
-        
+        <Searchbox>
+           <SearchIconn> <SearchIcon fontSize='medium' /> </SearchIconn>
+           <Searchbtn type="text" placeholder='Search here for fashion'></Searchbtn>
+        </Searchbox>
 
-            </Flexi>
+   </Flexi>
     </Container>
   )
 }
@@ -35,7 +40,7 @@ display: flex;
 const Fasn = styled.div`
  display: flex;
  color:white;
-
+ margin-left: 60px;
 `
 
 const Spans = styled.div`
@@ -49,4 +54,29 @@ const Spans = styled.div`
 const Leftarrow = styled.div`
  margin-top:10px;
 color: white;
+`
+
+const Searchbox = styled.div`
+  margin-left: 27%;
+  display: flex;
+  border: 3px solid white;
+ align-items: center;
+width: 350px;
+border-radius: 5px;
+`
+
+const SearchIconn = styled.div`
+color: white;
+margin-left: 10px;
+`
+
+const Searchbtn = styled.input`
+margin-left: 10px;
+   background: none;
+   outline: none;
+   border: none;
+   color: white;
+   font-size: 19px;
+   font-family: Arial, Helvetica, sans-serif;
+   margin-top: 2px;
 `

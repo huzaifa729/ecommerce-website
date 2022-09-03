@@ -119,7 +119,7 @@ const Titles = styled.div`
 
 const TopBrand = styled.div`
   margin-top:5px;
-  margin-left:10px;
+  margin-left:70px;
 `
 
 const Image = styled.div`
