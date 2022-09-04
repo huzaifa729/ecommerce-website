@@ -29,8 +29,8 @@ function Product({id,img,title,price,info,cutprice}) {
        <Title>{title}</Title>
        <Info>{info}</Info>
        <Priceoff>
-         <Price>{price}</Price>
-         <Cutprice>{cutprice}</Cutprice>
+         <Price>₹{price}</Price>
+         <Cutprice>₹{cutprice}</Cutprice>
        </Priceoff>
       <Button onClick={addtocart}>
         Shop now
