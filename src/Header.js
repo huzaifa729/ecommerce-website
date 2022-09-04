@@ -6,11 +6,14 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 // import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import Profile from './Profile';
  import { Link } from 'react-router-dom';
+import { useStateValue } from './StateProvider';
 //  import CarouselController from './component/CarouselController';
 //  import AllProduct from './AllProduct';
 
 
 function Header() {
+   const [{cart},dispatch] = useStateValue('');
+   
   return (
 
       <Container>
@@ -43,7 +46,7 @@ function Header() {
            </HeaderButton>
 
            <HeaderCart>
-            <CartCount>0</CartCount>
+            <CartCount>{cart.length}</CartCount>
             <ShoppingCartOutlinedIcon fontSize='large'/>
            </HeaderCart>
 

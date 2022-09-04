@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import { Link } from 'react-router-dom';
 import SearchIcon from '@mui/icons-material/Search';
+import Product from './Product';
 
 
 function Fashion() {
@@ -21,6 +22,124 @@ function Fashion() {
         </Searchbox>
 
    </Flexi>
+
+   <Row>
+     <DispalyRow>
+       <Product
+       id="01"
+       img="https://www.tatadigital.com/content/dam/tcp/app-core/app-content/slp/slp-fashion/30_03_2022/men-_-women-apparel/Levisupdated.jpg"
+       title="Levi's"
+       info="Flat 50% off + extra 10% off* on Levi's"
+       price={519}
+       cutprice={1256}
+/>
+
+<Product
+       id="01"
+       img="https://www.tatadigital.com/content/dam/tcp/app-core/app-content/slp/slp-fashion/30_03_2022/men-_-women-apparel/Levisupdated.jpg"
+       title="Levi's"
+       info="Flat 50% off + extra 10% off* on Levi's"
+       price={519}
+       cutprice={1256}
+/>
+
+<Product
+       id="01"
+       img="https://www.tatadigital.com/content/dam/tcp/app-core/app-content/slp/slp-fashion/30_03_2022/men-_-women-apparel/Levisupdated.jpg"
+       title="Levi's"
+       info="Flat 50% off + extra 10% off* on Levi's"
+       price={519}
+       cutprice={1256}
+/>
+ </DispalyRow>  
+
+      <DispalyRow>
+       <Product
+       id="01"
+       img="https://www.tatadigital.com/content/dam/tcp/app-core/app-content/slp/slp-fashion/30_03_2022/men-_-women-apparel/Levisupdated.jpg"
+       title="Levi's"
+       info="Flat 50% off + extra 10% off* on Levi's"
+       price={519}
+       cutprice={1256}
+/>
+
+<Product
+       id="01"
+       img="https://www.tatadigital.com/content/dam/tcp/app-core/app-content/slp/slp-fashion/30_03_2022/men-_-women-apparel/Levisupdated.jpg"
+       title="Levi's"
+       info="Flat 50% off + extra 10% off* on Levi's"
+       price={519}
+       cutprice={1256}
+/>
+
+<Product
+       id="01"
+       img="https://www.tatadigital.com/content/dam/tcp/app-core/app-content/slp/slp-fashion/30_03_2022/men-_-women-apparel/Levisupdated.jpg"
+       title="Levi's"
+       info="Flat 50% off + extra 10% off* on Levi's"
+       price={519}
+       cutprice={1256}
+/>
+ </DispalyRow>   
+
+ <DispalyRow>
+       <Product
+       id="01"
+       img="https://www.tatadigital.com/content/dam/tcp/app-core/app-content/slp/slp-fashion/30_03_2022/men-_-women-apparel/Levisupdated.jpg"
+       title="Levi's"
+       info="Flat 50% off + extra 10% off* on Levi's"
+       price={519}
+       cutprice={1256}
+/>
+
+<Product
+       id="01"
+       img="https://www.tatadigital.com/content/dam/tcp/app-core/app-content/slp/slp-fashion/30_03_2022/men-_-women-apparel/Levisupdated.jpg"
+       title="Levi's"
+       info="Flat 50% off + extra 10% off* on Levi's"
+       price={519}
+       cutprice={1256}
+/>
+
+<Product
+       id="01"
+       img="https://www.tatadigital.com/content/dam/tcp/app-core/app-content/slp/slp-fashion/30_03_2022/men-_-women-apparel/Levisupdated.jpg"
+       title="Levi's"
+       info="Flat 50% off + extra 10% off* on Levi's"
+       price={519}
+       cutprice={1256}
+/>
+ </DispalyRow> 
+
+      <DispalyRow>
+       <Product
+       id="01"
+       img="https://www.tatadigital.com/content/dam/tcp/app-core/app-content/slp/slp-fashion/30_03_2022/men-_-women-apparel/Levisupdated.jpg"
+       title="Levi's"
+       info="Flat 50% off + extra 10% off* on Levi's"
+       price={519}
+       cutprice={1256}
+/>
+
+<Product
+       id="01"
+       img="https://www.tatadigital.com/content/dam/tcp/app-core/app-content/slp/slp-fashion/30_03_2022/men-_-women-apparel/Levisupdated.jpg"
+       title="Levi's"
+       info="Flat 50% off + extra 10% off* on Levi's"
+       price={519}
+       cutprice={1256}
+/>
+
+<Product
+       id="01"
+       img="https://www.tatadigital.com/content/dam/tcp/app-core/app-content/slp/slp-fashion/30_03_2022/men-_-women-apparel/Levisupdated.jpg"
+       title="Levi's"
+       info="Flat 50% off + extra 10% off* on Levi's"
+       price={519}
+       cutprice={1256}
+/>
+ </DispalyRow>   
+   </Row>
     </Container>
   )
 }
@@ -79,4 +198,16 @@ margin-left: 10px;
    font-size: 19px;
    font-family: Arial, Helvetica, sans-serif;
    margin-top: 2px;
+`
+
+
+const Row = styled.div`
+ margin-left: 175px;
+ margin-top: 25px;
+
+`
+
+const DispalyRow = styled.div`
+  display: flex;
+ margin-bottom: 10px;
 `
