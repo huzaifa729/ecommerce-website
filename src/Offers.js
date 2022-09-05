@@ -32,20 +32,23 @@ function Offers() {
       </Fashion>
       </Link>
 
+<Link  style={{textDecoration: "none"}} to="/health">
     <Health>
        <Img>
        <img src="https://www.tatadigital.com/content/dam/tcp/app-core/app-content/pages/homepage/aggregated-banners/digital-assets/Offerzone_Icon_Healthcare.svg"alt='heath'/>
        </Img> 
        <Name>Health</Name> 
     </Health> 
+    </Link>
 
+    <Link  style={{textDecoration: "none"}} to="/beauty">
     <Beauty>
       <Img>
        <img src='https://www.tatadigital.com/content/dam/tcp/app-core/app-content/pages/homepage/aggregated-banners/digital-assets/BeautyNew.svg'alt='beauty'/>
       </Img>  
       <Name>Beauty</Name>
     </Beauty> 
-
+</Link>
   
         
     </OfferFlex>

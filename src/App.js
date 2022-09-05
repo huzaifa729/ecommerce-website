@@ -22,6 +22,8 @@ import { login, logout, selectUser } from "./features/userSlice";
 
 import {auth}  from './firebase'
 import Fashion from './Fashion';
+import Health from './Health';
+import Beauty from './Beauty';
 
   function App() {
    const user = useSelector(selectUser);
@@ -66,6 +68,8 @@ import Fashion from './Fashion';
              <Route path="/" element={<Home />}/> 
              <Route path="/offers" element={<Offers />} />
              <Route path='/fashion' element={<Fashion/>}/>
+             <Route path='/health' element={<Health/>}/>
+             <Route path='/beauty' element={<Beauty/>}/>
             </Routes>
       {/* <CarouselController/>     */}
        {/* <Hello/> */}

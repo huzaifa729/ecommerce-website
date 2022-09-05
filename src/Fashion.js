@@ -12,7 +12,7 @@ function Fashion() {
    
         <Flexi>
         <Fasn>
-        <Link style={{textDecoration: "none"}} to ="/offers"><Leftarrow><ArrowBackIosNewIcon fontSize='large'/></Leftarrow>   </Link>
+        <Link style={{textDecoration: "none"}} to ="/offers"><Leftarrow><ArrowBackIosNewIcon fontSize='large'/></Leftarrow></Link>
         <Spans>Fashions</Spans>
         </Fasn>
 
