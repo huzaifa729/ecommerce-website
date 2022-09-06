@@ -24,6 +24,7 @@ import {auth}  from './firebase'
 import Fashion from './Fashion';
 import Health from './Health';
 import Beauty from './Beauty';
+import Hotel from './Hotel';
 
   function App() {
    const user = useSelector(selectUser);
@@ -70,6 +71,7 @@ import Beauty from './Beauty';
              <Route path='/fashion' element={<Fashion/>}/>
              <Route path='/health' element={<Health/>}/>
              <Route path='/beauty' element={<Beauty/>}/>
+             <Route path='/hotel' element={<Hotel/>}/>
             </Routes>
       {/* <CarouselController/>     */}
        {/* <Hello/> */}

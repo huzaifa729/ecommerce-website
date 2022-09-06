@@ -56,12 +56,14 @@ function Offers() {
     
     <OfferFlex>
 
+    <Link  style={{textDecoration: "none"}} to="/hotel">
       <Hotels>
         <Img> 
         <img src="https://www.tatadigital.com/content/dam/tcp/app-core/app-content/pages/homepage/aggregated-banners/digital-assets/travel.svg"alt='hotels'/>
          </Img>
          <Name>Hotels</Name>
       </Hotels>
+      </Link>
 
     <Fitness>
        <Img>

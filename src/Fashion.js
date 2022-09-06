@@ -9,19 +9,17 @@ import Product from './Product';
 function Fashion() {
   return (
     <Container>
-   
-        <Flexi>
+    <Flexi>
         <Fasn>
         <Link style={{textDecoration: "none"}} to ="/offers"><Leftarrow><ArrowBackIosNewIcon fontSize='large'/></Leftarrow></Link>
         <Spans>Fashions</Spans>
         </Fasn>
-
-        <Searchbox>
+   
+   <Searchbox>
            <SearchIconn> <SearchIcon fontSize='medium' /> </SearchIconn>
            <Searchbtn type="text" placeholder='Search here for fashion'></Searchbtn>
         </Searchbox>
-
-   </Flexi>
+</Flexi>
 
    <Row>
      <DispalyRow>
