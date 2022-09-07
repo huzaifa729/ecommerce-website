@@ -25,6 +25,7 @@ import Fashion from './Fashion';
 import Health from './Health';
 import Beauty from './Beauty';
 import Hotel from './Hotel';
+import Fitness from './Fitness';
 
   function App() {
    const user = useSelector(selectUser);
@@ -72,6 +73,7 @@ import Hotel from './Hotel';
              <Route path='/health' element={<Health/>}/>
              <Route path='/beauty' element={<Beauty/>}/>
              <Route path='/hotel' element={<Hotel/>}/>
+             <Route path='/fitness' element={<Fitness/>}/>
             </Routes>
       {/* <CarouselController/>     */}
        {/* <Hello/> */}

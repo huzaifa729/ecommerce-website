@@ -65,12 +65,14 @@ function Offers() {
       </Hotels>
       </Link>
 
+      <Link  style={{textDecoration: "none"}} to="/fitness">
     <Fitness>
        <Img>
        <img src="https://www.tatadigital.com/content/dam/tcp/app-core/app-content/pages/homepage/aggregated-banners/digital-assets/Fitness.svg"alt='fitness'/>
        </Img> 
        <Name>Fitness</Name> 
     </Fitness> 
+    </Link>
 
     <Grocyery>
       <Img>
