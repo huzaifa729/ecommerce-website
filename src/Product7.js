@@ -2,23 +2,22 @@ import React from 'react'
 import styled from 'styled-components';
 import { useStateValue } from './StateProvider';
 
-function Product5({id,img,title,info,price,cutprice}) {
+function Product7({id,img,title,info}) {
 
-  const [{cart},dispatch] = useStateValue('');
+    const [{cart},dispatch] = useStateValue('');
 
-  const addtocart = () =>{
-   dispatch({
-     type:"ADD_TO_CART",
-     item:{
-       id:id,
-       img:img,
-       title:title,
-       price:price,
-       info:info,
-       cutprice:cutprice,
-     }
-   })
-  }
+    const addtocart = () =>{
+     dispatch({
+       type:"ADD_TO_CART",
+       item:{
+         id:id,
+         img:img,
+         title:title,
+         info:info,
+     
+       }
+     })
+    }
 
   return (
     <Container>
@@ -28,19 +27,19 @@ function Product5({id,img,title,info,price,cutprice}) {
        </Imags>
        <Title>{title}</Title>
        <Info>{info}</Info>
-       <Priceoff>
+       {/* <Priceoff>
          <Price>₹{price}</Price>
          <Cutprice>₹{cutprice}</Cutprice>
-       </Priceoff>
+       </Priceoff> */}
       <Button onClick={addtocart}>
-        Shop now
+        Book now
       </Button>
     </Products>
 </Container>
   )
 }
 
-export default Product5;
+export default Product7;
 
 const Container = styled.div`
  margin-top: 40px;

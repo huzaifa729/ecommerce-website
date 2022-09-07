@@ -74,13 +74,14 @@ function Offers() {
     </Fitness> 
     </Link>
 
+    <Link  style={{textDecoration: "none"}} to="/grocery">
     <Grocyery>
       <Img>
        <img src='https://www.tatadigital.com/content/dam/tcp/app-core/app-content/pages/homepage/aggregated-banners/digital-assets/essentials.svg'alt='grocery'/>
       </Img>  
       <Name>Grocery</Name>
     </Grocyery> 
-
+</Link>
   
         
     </OfferFlex>
@@ -89,19 +90,23 @@ function Offers() {
     
     <OfferFlex>
 
+    <Link  style={{textDecoration: "none"}} to="/flight">
       <Flights>
         <Img> 
         <img src="https://www.tatadigital.com/content/dam/tcp/app-core/app-content/pages/homepage/aggregated-banners/digital-assets/airline.svg"alt='flights'/>
          </Img>
          <Name>Flights</Name>
       </Flights>
+      </Link>
 
+    <Link  style={{textDecoration: "none"}} to="/eat">
     <Eat>
        <Img>
        <img src="https://www.tatadigital.com/content/dam/tcp/app-core/app-content/pages/homepage/aggregated-banners/digital-assets/Fooddrinksnew.svg"alt='eat&drink'/>
        </Img> 
        <Name>Eat & Drink</Name> 
-    </Eat> 
+    </Eat>
+    </Link> 
 
     <Luxury>
       <Img>

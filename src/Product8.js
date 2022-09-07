@@ -2,24 +2,21 @@ import React from 'react'
 import styled from 'styled-components';
 import { useStateValue } from './StateProvider';
 
-function Product5({id,img,title,info,price,cutprice}) {
+function Product8({id,img,title,info}) {
+    const [{cart},dispatch] = useStateValue('');
 
-  const [{cart},dispatch] = useStateValue('');
-
-  const addtocart = () =>{
-   dispatch({
-     type:"ADD_TO_CART",
-     item:{
-       id:id,
-       img:img,
-       title:title,
-       price:price,
-       info:info,
-       cutprice:cutprice,
-     }
-   })
-  }
-
+    const addtocart = () =>{
+     dispatch({
+       type:"ADD_TO_CART",
+       item:{
+         id:id,
+         img:img,
+         title:title,
+         info:info,
+     
+       }
+     })
+    }
   return (
     <Container>
     <Products>
@@ -28,19 +25,19 @@ function Product5({id,img,title,info,price,cutprice}) {
        </Imags>
        <Title>{title}</Title>
        <Info>{info}</Info>
-       <Priceoff>
+       {/* <Priceoff>
          <Price>₹{price}</Price>
          <Cutprice>₹{cutprice}</Cutprice>
-       </Priceoff>
+       </Priceoff> */}
       <Button onClick={addtocart}>
-        Shop now
+        Know more
       </Button>
     </Products>
 </Container>
   )
 }
 
-export default Product5;
+export default Product8;
 
 const Container = styled.div`
  margin-top: 40px;
@@ -110,5 +107,5 @@ const Button = styled.button`
     font-size: 19px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     width: 170px;
-    margin-top: 7px;
+    margin-top: 12px;
 `
