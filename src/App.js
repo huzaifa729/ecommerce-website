@@ -29,6 +29,7 @@ import Fitness from './Fitness';
 import Grocery from './Grocery';
 import Flight from './Flight';
 import Eat from './Eat';
+import Luxury from './Luxury';
 
 
   function App() {
@@ -81,6 +82,7 @@ import Eat from './Eat';
              <Route path='/grocery' element={<Grocery/>}/>
              <Route path='/flight' element={<Flight/>}/>
              <Route path='/eat' element={<Eat/>}/>
+             <Route path='/luxury' element={<Luxury/>}/>
             </Routes>
       {/* <CarouselController/>     */}
        {/* <Hello/> */}

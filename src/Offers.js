@@ -108,13 +108,15 @@ function Offers() {
     </Eat>
     </Link> 
 
+
+    <Link  style={{textDecoration: "none"}} to="/luxury">
     <Luxury>
       <Img>
        <img src='https://www.tatadigital.com/content/dam/tcp/app-core/app-content/pages/homepage/aggregated-banners/digital-assets/Luxurynew.svg'alt='luxury'/>
       </Img>  
       <Name>Luxury</Name>
     </Luxury> 
-
+    </Link>
   
         
     </OfferFlex>
