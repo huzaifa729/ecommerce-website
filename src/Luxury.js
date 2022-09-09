@@ -91,18 +91,18 @@ function Luxury() {
 
 <Product9
        id="08"
-       img="https://www.tatadigital.com/content/dam/tcp/app-core/app-content/slp/slp-fashion/30_03_2022/handbags/LAVIE.jpg"
-       title="Lavie"
-       info="Flat 50% off + extra 10% off* on Lavie"
+       img="https://www.tatadigital.com/content/dam/tcp/app-core/app-content/offer-creatives/exclusive-offers/20220601/TATACliq_EO.jpg"
+       title="Clothing"
+       info="Flat 10% off on Luxury"
        price={1849}
        cutprice={6556}
 />
 
 <Product9
        id="09"
-       img="https://www.tatadigital.com/content/dam/tcp/app-core/app-content/slp/slp-fashion/30_03_2022/men_s_accessories/TOMMY_HILFIGER.jpg"
-       title="Tommy Hilfiger"
-       info="Flat 50% off + extra 10% off* on tommy hilfiger"
+       img="https://www.tatadigital.com/content/dam/tcp/app-core/app-content/cliq_offer_images_24052022/Tumi.jpg"
+       title="Tumi"
+       info="Special discounts on Tumi"
        price={8519}
        cutprice={12056}
 />
@@ -111,60 +111,23 @@ function Luxury() {
       <DispalyRow>
        <Product9
        id="10"
-       img="https://www.tatadigital.com/content/dam/tcp/app-core/app-content/slp/slp-fashion/30_03_2022/jewllery/Joyalukkas.jpg"
-       title="Joyalukkas"
-       info="Flat 55% off + extra 3% off* on Joyalukkas"
+       img="https://www.tatadigital.com/content/dam/tcp/app-core/app-content/cliq_offer_images_24052022/Bvlgari.jpg"
+       title="Bvlgari"
+       info="Special offers on Bvlgari"
        price={22519}
        cutprice={15256}
 />
 
 <Product9
        id="11"
-       img="https://www.tatadigital.com/content/dam/tcp/app-core/app-content/slp/slp-fashion/30_03_2022/jewllery/PC_Jewellers.jpg"
-       title="PC Jeweller"
-       info="Flat 50% off + extra 10% off* on PC Jeweller"
+       img="https://www.tatadigital.com/content/dam/tcp/app-core/app-content/cliq_offer_images_24052022/Dune_London.jpg"
+       title="Dune"
+       info="Up to 50% off on Dune London"
        price={35519}
        cutprice={22256}
 />
-
-<Product9
-       id="12"
-       img="https://www.tatadigital.com/content/dam/tcp/app-core/app-content/slp/slp-fashion/30_03_2022/home/D_Decor.jpg"
-       title="DDecor"
-       info="Flat 50% off + extra 10% off* on DDecor"
-       price={1519}
-       cutprice={1256}
-/>
  </DispalyRow>   
 
- <DispalyRow>
-       <Product9
-       id="13"
-       img="https://www.tatadigital.com/content/dam/tcp/app-core/app-content/slp/slp-fashion/30_03_2022/watches/FASTRACK.jpg"
-       title="G-Shock"
-       info="Flat 25% off + extra 3% off* on G-Shock"
-       price={2519}
-       cutprice={1056}
-/>
-
-<Product9
-       id="14"
-       img="https://www.tatadigital.com/content/dam/tcp/app-core/app-content/slp/slp-fashion/30_03_2022/men_s_apparel/american_eagle.jpg"
-       title="American Eagle"
-       info="Flat 50% off + extra 10% off* on PC American Eagle"
-       price={1519}
-       cutprice={2256}
-/>
-
-<Product9
-       id="15"
-       img="https://www.tatadigital.com/content/dam/tcp/app-core/app-content/slp/slp-fashion/30_03_2022/eyewear/Vincent_chase.jpg"
-       title="Vincent Chase"
-       info="Flat 50% off + extra 10% off* on Vincent Chase"
-       price={3519}
-       cutprice={1756}
-/>
- </DispalyRow> 
    </Row>
      </Container>
   )

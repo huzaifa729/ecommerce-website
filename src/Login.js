@@ -98,7 +98,7 @@ const Container = styled.div`
     /* background-image: url("https://t3.ftcdn.net/jpg/01/91/78/32/360_F_191783282_0TVrx5VrvrkpDHSKdjjI87HkbXJy5TMw.jpg"); */
     background-image: url("https://img.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28312.jpg");
      color:black;
-     height: 656px;
+     height: fit-content;
      background-position: center;
      background-size: cover;
   
@@ -347,9 +347,9 @@ const TP = styled.div`
 
 const Line = styled.div`
   width:100%;
-  height: 2px;
+  height: 4px;
   background-color: black;
-  margin-top:55px;
+  margin-top:85px;
 `
 
 const Foot = styled.div`
