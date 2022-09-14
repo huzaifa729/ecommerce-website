@@ -42,7 +42,9 @@ function Header() {
            </HeaderSearch> 
 
            <HeaderButton>
-              <LoginBtn>Login</LoginBtn>
+            <Link style={{textDecoration: "none"}} to="/logn">
+            <LoginBtn>Login</LoginBtn>
+            </Link>
            </HeaderButton>
 
            <HeaderCart>

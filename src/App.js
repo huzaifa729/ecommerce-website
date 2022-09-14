@@ -30,6 +30,7 @@ import Grocery from './Grocery';
 import Flight from './Flight';
 import Eat from './Eat';
 import Luxury from './Luxury';
+import Logn from './Logn';
 
 
   function App() {
@@ -62,11 +63,12 @@ import Luxury from './Luxury';
      
      <div className="App">
    
-       {""}
+        {""}
      {!user ? (
-        <Login/>
+        // <Login/>
+        <h1></h1>
      ):(
-        <>
+        <> 
      
      
   
@@ -83,6 +85,7 @@ import Luxury from './Luxury';
              <Route path='/flight' element={<Flight/>}/>
              <Route path='/eat' element={<Eat/>}/>
              <Route path='/luxury' element={<Luxury/>}/>
+             <Route path='/logn' element={<Logn/>}/>
             </Routes>
       {/* <CarouselController/>     */}
        {/* <Hello/> */}
@@ -97,8 +100,8 @@ import Luxury from './Luxury';
       <Footer/> */}
 
 
-        </>
-     )}
+          </> 
+      )} 
     </div>
  
     </BrowserRouter>
