@@ -34,7 +34,7 @@ import Logn from './Logn';
 
 
   function App() {
-   const user = useSelector(selectUser);
+    const user = useSelector(selectUser);
    const dispatch = useDispatch();
 
    useEffect(() => {
@@ -64,10 +64,10 @@ import Logn from './Logn';
      <div className="App">
    
         {""}
-     {!user ? (
+      {!user ? (
         // <Login/>
         <h1></h1>
-     ):(
+     ):( 
         <> 
      
      
@@ -101,7 +101,7 @@ import Logn from './Logn';
 
 
           </> 
-      )} 
+       )}  
     </div>
  
     </BrowserRouter>

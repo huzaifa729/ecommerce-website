@@ -60,37 +60,55 @@ Tabs.propTypes = {
 };
 
 // Style
-const borderStyle = "1px solid rgba(0,0,0,0.15)";
+// const borderStyle = "1px solid rgba(0,0,0,0.15)";
 const tabsStyle = {
-  boxShadow: "0 10px 40px -20px rgba(0,0,0,0.35)",
-  border: borderStyle,
-  borderRadius: "8px"
+  // boxShadow: "0 10px 40px -20px rgba(0,0,0,0.35)",
+  // border: borderStyle,
+  // borderRadius: "8px"
+  color: "white",
+  justifyContent: "space-between",
+  padding: "60px",
+  fontfamily: "Arial, Helvetica, sans-serif",
+  fontSize:"30px",
+  // border:"5px solid red",
+  border:"2px solid red",
+  width:"1000px",
+  height:"50px",
+  marginTop:"50px"
 };
 
 const tabsHeaderStyle = {
-  display: "flex",
-  justifyContent: "space-between",
-  backgroundColor: "#f7f7f7",
-  borderRadius: "8px 8px 0 0",
-  overflow: "hidden"
+   display: "flex",
+  // justifyContent: "space-around",
+  // backgroundColor: "#f7f7f7",
+  // borderRadius: "8px 8px 0 0",
+  // overflow: "hidden",
+  padding: "0px",
+  // textAlign: "center",
+  marginLeft:"310px",
+
+ 
 };
 
 const tabHeaderStyle = {
-  flex: "1",
-  padding: "10px",
+  // flex: "1",
+  // padding: "50px",
   textAlign: "center",
   cursor: "pointer",
-  borderBottom: borderStyle
+  // borderBottom: borderStyle
+  marginLeft:"150px",
+
 };
 
 const activeTabHeaderStyle = Object.assign({}, tabHeaderStyle, {
-  backgroundColor: "#fff",
-  borderBottom: "none",
+  // backgroundColor: "#fff",
+  // borderBottom: "none",
   cursor: "auto",
-  color: "black"
+  color: "white",
+  textDecoration:"underline",
 });
 
-const sideHeaderStyle = { borderLeft: borderStyle };
+ const sideHeaderStyle = {  };
 
 const tabsContentStyle = {
   padding: "10px",
