@@ -29,10 +29,12 @@ const Container = styled.div`
  margin-right:210px;
  color: white;
  margin-top: -7px;
+ /* height: 120px; */
 `
 const LoginForm = styled.div`
   display: flex;
   flex-direction: column;
+
 `
 
 const First = styled.div`
@@ -54,11 +56,12 @@ const InputBox = styled.input`
   outline: none;
   background: none;
   width: 250px;
-  border-bottom: 3px solid grey;
+ border-bottom: 3px solid white; 
   /* margin-left: 190px; */
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 19px;
+
 `
 
 const Button = styled.button`
@@ -68,7 +71,8 @@ const Button = styled.button`
     border: none;
     outline: none;
     background: none;
-    border: 5px solid black;
+    border: 5px solid whitesmoke;
+    /* background:  linear-gradient(to right, #ed8034 0%,#ed8034 33%,#feb123 33%,#feb123 66%,#2184cd 66%,#2184cd 100%); */
     font-family: Arial, Helvetica, sans-serif;
     width: 150px;
     color: white;

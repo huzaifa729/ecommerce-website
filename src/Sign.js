@@ -1,3 +1,4 @@
+
 import React from 'react'
 import styled from 'styled-components';
 
@@ -17,27 +18,48 @@ function Sign() {
      </LoginForm>
    </Container>
    <SignWith>Sign up with</SignWith>
+
+   <AllLogin>
    <SocialAccount>
        <Google>
         <Button>
         <img className="goggle-logo" src="//assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/google-icon.5c764c55.svg" alt="Google Logo"/>
-    
         </Button>
        </Google>
 
-       <Google>
+       <Twitter>
         <Button>
         <img className="twitter-logo" src="https://cdn-icons-png.flaticon.com/128/747/747622.png?ga=GA1.2.936411358.1657092341" alt="twitter"/>
-      
-        </Button>
-       </Google>
+       </Button>
+       </Twitter>
 
-       <Google>
+       <Github>
         <Button>
         <img className="github-logo" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github Logo"/>
         </Button>
-       </Google>
+       </Github>
    </SocialAccount>
+
+    <Socialbtn>
+
+    <Facebook>
+        <Button>
+        <img className="github-logo" src="https://1000logos.net/wp-content/uploads/2016/11/Facebook-logo-thumb.png" alt="facebook Logo"/>
+        </Button>
+       </Facebook>
+
+       <Instagram>
+        <Button>
+        <img className="github-logo" src="https://1000logos.net/wp-content/uploads/2017/02/Instagram-Logo-tumb.png" alt="Instagram Logo"/>
+        </Button>
+       </Instagram>
+
+    </Socialbtn>
+   </AllLogin>
+
+   <Endline>
+      <New>New to D-Shop? Create an account</New>
+   </Endline>
    </Signn>
   )
 }
@@ -77,7 +99,7 @@ const InputBox = styled.input`
   outline: none;
   background: none;
   width: 250px;
-  border-bottom: 3px solid grey;
+  border-bottom: 3px solid whitesmoke;
   /* margin-left: 190px; */
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -95,8 +117,9 @@ const SignWith = styled.div`
     content: "";
 display: inline-block;
     height: 3px;
-    width: 27%;
-    background-color: #2a405b;
+    width: 29%;
+    /* background-color: #2a405b; */
+    background:  linear-gradient(to right, #ed8034 0%,#ed8034 33%,#feb123 33%,#feb123 66%,#2184cd 66%,#2184cd 100%);
     position: relative;
     vertical-align: middle; 
      left: -20px; 
@@ -104,14 +127,19 @@ display: inline-block;
 
    ::after{
     content: "";
-    width: 27%;
+    width: 29%;
     height: 3px;
-    background-color: #2a405b;
+    /* background-color: #2a405b; */
+    background:  linear-gradient(to right, #ed8034 0%,#ed8034 33%,#feb123 33%,#feb123 66%,#2184cd 66%,#2184cd 100%);
     position: relative;
     display: inline-block;
     vertical-align: middle;
     left: 25px;
    }
+`
+
+const AllLogin = styled.div`
+ margin-top: 5px;
 `
 
 const SocialAccount = styled.div`
@@ -120,11 +148,20 @@ const SocialAccount = styled.div`
  margin-top: 20px;
  text-align: center;
  /* justify-content: center; */
- margin-right: 45px;
+ margin-right: 60px;
  justify-content: space-around;
 `
 
 const Google = styled.div`
+ margin-bottom: 15px;
+ margin-left: 25px;
+`
+const Twitter = styled.div`
+ margin-bottom: 15px;
+ margin-left: 25px;
+`
+
+const Github = styled.div`
  margin-bottom: 15px;
  margin-left: 25px;
 `
@@ -133,15 +170,53 @@ const Button = styled.button`
 
 width: 127%;
     height: 48px;
-    background-color: #2a405b;
+    /* background-color: #2a405b; */
+    /* background:  linear-gradient(to right, #ed8034 0%,#ed8034 33%,#feb123 33%,#feb123 66%,#2184cd 66%,#2184cd 100%); */
     border-radius: 5px;
    margin: 0px 12px;
-   
+   background: none;
   cursor: pointer;
   img{
     width: 30px;
   }
 `
 
+
+const Socialbtn = styled.div`
+ display: flex;
+ margin-left: 5px;
+`
+
+
+const Instagram = styled.div`
+ margin-bottom: 15px;
+ margin-left: 35px;
+
+ img{
+  width: 50px;
+
+ }
+`
+
+const Facebook = styled.div`
+ margin-bottom: 15px;
+ margin-left: 2px;
+
+ img{
+  width: 50px;
+
+ }
+`
+
+
+const Endline = styled.div`
+  color: white;
+  margin-top: 5px;
+`
+
+const New = styled.div`
+ font-size: 19px;
+ font-family: Arial, Helvetica, sans-serif;
+`
 
 
