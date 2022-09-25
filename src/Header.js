@@ -30,7 +30,8 @@ function Header() {
          <Navtwo>
          <Link to="/offers" className='linwk'>
             Offers</Link></Navtwo>
-           <Navthree>Stories</Navthree>
+           
+           <Link to="/store" style={{textDecoration: "none" }}><Navthree>Stories </Navthree></Link>
         </Headertitles>
 
            <HeaderSearch>

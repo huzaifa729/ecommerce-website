@@ -31,6 +31,7 @@ import Flight from './Flight';
 import Eat from './Eat';
 import Luxury from './Luxury';
 import Logn from './Logn';
+import Store from './Store';
 
 
   function App() {
@@ -86,6 +87,7 @@ import Logn from './Logn';
              <Route path='/eat' element={<Eat/>}/>
              <Route path='/luxury' element={<Luxury/>}/>
              <Route path='/logn' element={<Logn/>}/>
+             <Route path="/store" element={<Store/>}/>
             </Routes>
       {/* <CarouselController/>     */}
        {/* <Hello/> */}
